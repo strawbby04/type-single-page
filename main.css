@@ -17,10 +17,11 @@
   .logo {
     margin: 0;
   }
-  /* where to change the background color of the nav bar */
+  /* where to change the background color of the pop-up nav bar*/
   nav {
       position: absolute;
       text-align: left;
+      padding-top:10px;
       top: 100%;
       left: 0;
       background: gray;
@@ -49,10 +50,9 @@
       opacity: 0;
       transition: opacity 100ms ease-in-out;
   }
-  
+  /* where to change the font color of the nav bar pop-up */
   nav a:hover {
       color: orange;
-  
   }
   
   .nav-checkbox:checked ~ nav {
@@ -70,8 +70,7 @@
       margin-left: 1em;
       height: 100%;
       display: flex;
-      align-items: center;
-        
+      align-items: center;    
   }
   
   .nav-checkbox-icon span,
@@ -79,8 +78,11 @@
   .nav-checkbox-icon span::after {
   
           display: block;
+          /* color of the hamburger menu */
           background: black;
-          height: 2px;
+          /* how far the hamburger menu is from the top */
+          margin-top:7px;
+          height: 3px;
           width: 2em;
           position: relative;
           
@@ -94,19 +96,16 @@
   }
   
   .nav-checkbox-icon span::before {
-  
       bottom: 7px;
   }
   
   .nav-checkbox-icon span::after {
-  
       bottom: 14px;
   }
   
   .nav-checkbox:checked ~ nav a{
       opacity: 1;
       transition: opacity 250ms ease-in-out 350ms;
-  
   }
   
   @media screen and (min-width: 800px) {
