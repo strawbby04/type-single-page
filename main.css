@@ -17,13 +17,13 @@
   .logo {
     margin: 0;
   }
-  
+  /* where to change the background color of the nav bar */
   nav {
       position: absolute;
       text-align: left;
       top: 100%;
       left: 0;
-      background: lightblue;
+      background: gray;
       width: 100%;
       transform: scale(1,0);
       transform-origin: top;
