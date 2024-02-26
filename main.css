@@ -2,7 +2,7 @@ body{
     background-color: lightsteelblue;
 }
 .page-wrapper{
-    width:80%vw;
-    margin-left:10%vw;
-    margin-right: 10%vw;
+    /* width:900px; */
+    padding-left:100px;
+    padding-right: 100px;
 }
