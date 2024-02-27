@@ -1,8 +1,36 @@
 body{
     background-color: lightsteelblue;
 }
+/* how the page wrapper will appear on mobile */
 .page-wrapper{
-    /* width:900px; */
-    padding-left:100px;
-    padding-right: 100px;
+    width: min(100% - 3rem, 65ch);
+    margin-inline: auto;
+}
+/* how the page wrapper appears on desktop */
+
+@media only screen and (min-width:800px){
+.page-wrapper{
+display: grid;
+grid-gap: 3px;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: auto;
+grid-template-areas: 
+    "h v"
+    "a a";
+}
+
+.history {
+grid-area: h;
+}
+
+.variations{
+grid-area: v;
+}
+
+.alphabet {
+grid-area: a;
+}
+/* CSS for the footer */
+footer{
+    background-color: gray;
 }
