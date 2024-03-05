@@ -1,24 +1,23 @@
 @font-face {
-    src: url("./fonts/FormaDJRVariableNormal[opsz\,slnt\,wght]-Edu.woff2") format("woff2"),
-         url('./fonts/FormaDJRVariableNormal[opsz\,slnt\,wght]-Edu.woff') format("woff"),
-        url('./fonts/FormaDJRVariableNormal[opsz\,slnt\,wght]-Edu.ttf') format('truetype');
+    src: url("fonts/RobotoSerif-VariableFont_GRAD\,opsz\,wdth\,wght.woff2") format("woff2"),
+        url('fonts/RobotoSerif-VariableFont_GRAD\,opsz\,wdth\,wght.ttf') format('truetype');
 
-    font-family: 'Forma';
+    font-family: 'Roboto Serif';
     font-style: normal;
     font-weight: normal;
     }
     
     body{
     background-color: lightsteelblue;
-    font-family: 'Forma';
+    font-family: 'Roboto Serif';
 }
 /* how the page wrapper will appear on mobile */
 .page-wrapper{
     width: min(100% - 3rem, 80ch);
     margin-inline: auto;
 }
-/* how the page wrapper appears on desktop */
 
+/* how the page wrapper appears on desktop */
 @media only screen and (min-width:800px){
 .page-wrapper{
 display: grid;
@@ -57,10 +56,12 @@ h3{
 
 @keyframes weightChange {
     0%, 100%{
-        font-variation-settings: "opsz" 16, "wght" 200, "slnt" 0;
-    }
-    50%{font-variation-settings: "opsz" 16, "wght" 900, "slnt" -13;
-    }
+        font-variation-settings: "wdth" 100, "opsz" 20, "wght" 100, "GRAD" 0;
+        }
+
+    50% { 
+        font-variation-settings: "wdth" 100, "opsz" 20, "wght" 900, "GRAD" 0;
+        }
     
 }
 /* variable font that changes on hover */
